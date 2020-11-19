@@ -3,13 +3,13 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import PropTypes from "prop-types";
 import Grid from "@material-ui/core/Grid";
 import AppIcon from "../images/icon.png";
-import { Typography } from "@material-ui/core";
+import { LinearProgress, Typography } from "@material-ui/core";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import { Link } from "react-router-dom";
 import TextField from "@material-ui/core/TextField";
 import axios from "axios";
-
 import Button from "@material-ui/core/Button";
+/*Is it working?*/
 const styles = {
     form: {
         textAlign: "center",
@@ -143,6 +143,7 @@ class login extends Component {
                                 />
                             )}
                         </Button>
+                        <LinearProgress />
                         <hr />
                         <small>
                             Don't have an account ? Signup
