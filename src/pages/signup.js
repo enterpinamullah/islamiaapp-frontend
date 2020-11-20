@@ -8,6 +8,7 @@ import CircularProgress from "@material-ui/core/CircularProgress";
 import TextField from "@material-ui/core/TextField";
 import axios from "axios";
 import Button from "@material-ui/core/Button";
+import { Link } from "react-router-dom";
 /*Is it working?*/
 
 const styles = (theme) => ({
@@ -145,6 +146,11 @@ class signup extends Component {
                                 />
                             )}
                         </Button>
+                        <hr />
+                        <small>
+                            Already have an account ? Login{" "}
+                            <Link to="/login">here</Link>
+                        </small>
                     </form>
                 </Grid>
                 <Grid item sm />
