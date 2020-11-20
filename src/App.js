@@ -8,9 +8,9 @@ import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
 
 import Navbar from "./components/Navbar";
 //pages
-import Home from "./pages/home";
-import Login from "./pages/login";
-import Signup from "./pages/signup";
+import home from "./pages/home";
+import login from "./pages/login";
+import signup from "./pages/signup";
 
 const theme = createMuiTheme({
     palette: {
@@ -27,34 +27,36 @@ const theme = createMuiTheme({
             contrastText: "#fff",
         },
     },
-    typography: {
-        useNextVariants: true,
-    },
-    form: {
-        textAlign: "center",
-        marginTop: 10,
-    },
-    image: {
-        margin: "20px auto 20px auto",
-    },
-    pageTitle: {
-        margin: "5px auto 20px auto",
-    },
-    textField: {
-        margin: "10px auto 10px auto",
-    },
-    button: {
-        marginTop: 20,
-        position: "relative",
-    },
-    customError: {
-        color: "red",
-        fontSize: "0.8rem",
-        marginTop: 10,
-    },
-    progress: {
-        position: "absolute",
-        color: "red",
+    spreadThis: {
+        typography: {
+            useNextVariants: true,
+        },
+        form: {
+            textAlign: "center",
+            marginTop: 10,
+        },
+        image: {
+            margin: "20px auto 20px auto",
+        },
+        pageTitle: {
+            margin: "5px auto 20px auto",
+        },
+        textField: {
+            margin: "10px auto 10px auto",
+        },
+        button: {
+            marginTop: 20,
+            position: "relative",
+        },
+        customError: {
+            color: "red",
+            fontSize: "0.8rem",
+            marginTop: 10,
+        },
+        progress: {
+            position: "absolute",
+            color: "red",
+        },
     },
 });
 
@@ -67,12 +69,12 @@ class App extends Component {
                         <Navbar />
                         <div className="container">
                             <Switch>
-                                <Route exact path="/" component={Home} />
-                                <Route exact path="/login" component={Login} />
+                                <Route exact path="/" component={home} />
+                                <Route exact path="/login" component={login} />
                                 <Route
                                     exact
                                     path="/signup"
-                                    component={Signup}
+                                    component={signup}
                                 />
                             </Switch>
                         </div>
